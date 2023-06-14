@@ -80,7 +80,7 @@ export default function NewUser() {
         // relationship: relationship.current.value,
       };
       try {
-      const res=  await axios.post("/auth/register", user);
+      const res=  await axios.post("https://facepageback.onrender.com/auth/register", user);
       console.log(res)
         setError("User Created");
         setOpen(true);
